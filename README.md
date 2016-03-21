@@ -305,19 +305,23 @@ and the index/key in order to solve the prompts.
 
 
 ```
-    // Example:
+  // Example:
 
-    var objOne = {name: 'Albrey', favoriteMovie: 'Inception'};
-    var objTwo = {favoriteColor: 'Blue', hungry: true}
+  var objOne = {name: 'Albrey', favoriteMovie: 'Inception'};
+  var objTwo = {favoriteColor: 'Blue', hungry: true}
 
-    extendObj(objOne, objTwo);
+  extendObj(objOne, objTwo);
 
-    console.log(objOne) // {name: 'Albrey', favoriteMovie: 'Inception', favoriteColor: 'Blue', hungry: true};
+  console.log(objOne) // {name: 'Albrey', favoriteMovie: 'Inception', favoriteColor: 'Blue', hungry: true};
 
-    ```
+```
+
 
 ### swapShuffle
+
 `swapShuffle` takes one argument, an array, and mutates the array (it does not make a new one) and returns it with shuffled values.
+
+
 ```
   // Example:
     var numbers = [1, 2, 3, 4, 5];
@@ -325,14 +329,17 @@ and the index/key in order to solve the prompts.
     console.log(numbers) //[3, 4, 2, 1, 5];
 ```
 
+
 ## CarFax.com Sprint
 
 My friend is looking to buy a car this month and is excited to search CarFax.com. Unfortunately their search form is broken, and he has employed you to fix it for him so he can get on the road as soon as possible. Use your `loop` function to solve the next set of prompts. We have created a list of cars for you `sampleCarList` that should should investigate before starting. Each car object has corresponding properties that you will need to sift through to get what you want. Good luck!
+
 
 ```
 var sampleCarList = helpers.carFactory(helpers.carDatabase, helpers.carMaker, 100);
 console.dir(sampleCarList);
 ```
+
 
 ### findBlueCars
 `findBlueCars` takes a `carList array` and returns an `array` containing each car object who's color is blue.
