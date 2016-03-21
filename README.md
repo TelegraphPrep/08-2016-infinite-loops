@@ -283,9 +283,8 @@ and the index/key in order to solve the prompts.
 
 
 
-### copyObj = function(obj){
-  /*
-  `copyObj` takes one argument, an object, and returns a copy of that object.
+### copyObj
+`copyObj` takes one argument, an object, and returns a copy of that object.
 
 * [ ] Use `loop` to create a copy of the input object.
 
