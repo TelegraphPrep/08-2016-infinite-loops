@@ -360,7 +360,7 @@ You'll notice that there aren't any directions for the next couple of exercises.
 
 ### findCarsByYear:
 
-  `findCarsByYear` takes 2 parameters: `carList` and `year` and returns a collection of cars objects that were made in that year.
+`findCarsByYear` takes 2 parameters: `carList` and `year` and returns a collection of cars objects that were made in that year.
 
 ### findCarsBetweenYears:
 `findCarsBetweenYears` takes 3 parameters: `carList`, `startYear`, and `endYear` and returns a collection of cars objects that were made between those years.
@@ -377,25 +377,27 @@ You'll notice that there aren't any directions for the next couple of exercises.
 1. `randomPriceGenerator` extends each `car object` to have a 'price' property with the value set to a random number between 15000 and 50000.
 
   ```
-    //Example
-    var carCollection = [{color: "black", make: "Ford", model:"Everest", year:1994}]
+  // Example:
+  var carCollection = [{color: "black", make: "Ford", model:"Everest", year:1994}]
   randomPriceGenerator(carCollection);
   console.log(carCollection);
-  //[{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
+
+  // [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
   ```
  2. Create another function, `findByPrice` that takes a `price` parameter and a `list of cars` and returns a list of every car that falls under that price. If no cars fall under the price return "there are no cars below the price you entered."
 
- ```
-//Example:  
- var carCollection = [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
- console.log(findByPrice(28000, carCollection);
- // [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
- ```
- 3. Extend your findByPrice function to take two parameters, a `lowEndPrice` and a `highEndPrice` and returns a list of cars that are between the two prices.
+  ```
+  // Example:  
+  var carCollection = [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
+  console.log(findByPrice(28000, carCollection);
+  // [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
+  ```
+
+3. Extend your findByPrice function to take two parameters, a `lowEndPrice` and a `highEndPrice` and returns a list of cars that are between the two prices.
 
 ### VerySpecificSearch
 
- 1. VerySpecificSearch allows the user to search using every specification: make, model, color, year, and between two prices. It returns a list containing each car that fulfills these VerySpecificSearch results. If there are no cars that fit the search terms, return "there are no cars that fit what you're looking for, try cars.com".
+1. VerySpecificSearch allows the user to search using every specification: make, model, color, year, and between two prices. It returns a list containing each car that fulfills these VerySpecificSearch results. If there are no cars that fit the search terms, return "there are no cars that fit what you're looking for, try cars.com".
 
 ## EXTRA EXTRA CREDIT:
- If there aren't any cars that fit the search term return "there are no cars that fit what you're looking for" and redirect their browser to Cars.com.
+If there aren't any cars that fit the search term return "there are no cars that fit what you're looking for" and redirect their browser to Cars.com.
