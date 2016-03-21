@@ -297,11 +297,12 @@ and the index/key in order to solve the prompts.
 
     console.log(copyOfObj) // {name: 'Albrey', favoriteMovie: 'Inception'};
 
-    ```
+```
 
 ### extendObj
 
 `extendObj` takes two objects as arguments and uses loop to extend obj1 with the contents of obj2
+
 
 ```
     // Example:
