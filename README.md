@@ -33,33 +33,39 @@ See the following document on [Pairing Dynamics Workflow](https://github.com/Tel
 
 ## Lesson: Higher Order Functions
 
-```
+```javascript
+
 var loop = function(collection, callback){
     // ultimate side-effects function
     for (var i = 0; i < collection.length; i++){
       callback(collection[i]);
     }
 };
+
 ```
 
 ### countVowels:
 `countVowels` takes one string as an argument and returns the number of vowels in the string.
 * [ ] instead of writing your own `for` loop, use `loop` to complete countVowels.
 
-```
+```javascript
+
 // Example:
 var numberOfVowels = countVowels('hey whats up');
 console.log(numberOfVowels); // 4
+
 ```
 
 ### stringReversal
 `stringReversal` takes a string and returns it in reverse.
 * [ ] use `loop` to complete stringReversal.  
 
-```
+```javascript
+
 // Example:
     var olleh = stringReversal('hello');
     console.log(olleh) // 'olleh';
+    
 ```
 
 
@@ -68,10 +74,12 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
 
 * [ ] use `loop` to complete `isPalindrome`.  
 
-```
+```javascript
+
 // Example:
   var truePalindrome = isPalindrome('hannah');
   var falsePalindrome = isPalindrome('hello');
+  
 ```
 
 
@@ -81,11 +89,13 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
 
 * [ ] use `loop` to complete `largestNumber`.  
 
-```
+```javascript
+
 // Example:
   var nums = [1, 21, 471, 470, 39, 10, 92];
   var largestNum = largestNumber(nums);
   console.log(largestNum) // 471
+  
 ```
 
 
@@ -95,11 +105,13 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
 
 * [ ] use `_.map` to complete `multBy`.
 
-```
+```javascript
+
   // Example:
   var nums = [1, 2, 3, 4, 5];
   var newArray = prep.multBy(nums, 3);
   console.log(newArray) // [3, 6, 9, 12, 15];
+  
 ```
 
 ### squareBy
@@ -108,11 +120,13 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
 
 * [ ] use _.map to complete `squareBy`.
 
-```
+```javascript
+
   // Example:
   var nums = [1, 2, 3, 4, 5];
   var newArray = prep.squareBy(nums, 3);
   console.log(newArray) // [1, 8, 27, 256, 3125];
+  
 ```
 
 ### capitalizeFirstLetters
@@ -121,12 +135,14 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
 
 * [ ] use loop to complete `capitalizeFirstLetters`
 
-```
+```javascript
+
 // Example:
   var string = 'hey how are you?';
 
   var newString = capitalizeFirstLetters(string)
   console.log(newString) // 'Hey How Are You?';
+  
 ```
 
 ## Expanding `Loop` to be used with objects:
@@ -135,7 +151,7 @@ Our current `loop` function only works with `Arrays`, and `Objects` are feeling 
 
 Remember the function we built during the week one self assessment? We can use it here as well:
 
-```
+```javascript
 
 var loop = function(collection, callback){
 
@@ -160,32 +176,34 @@ By just adding 4 lines of code, we can loop through `objects` as well! Solve the
 ### collectValues
     `collectValues` takes an object as an argument and returns an array containing all of its values.
 
-    ```
-    // Example:
+```javascript
 
-    var obj = {name: 'Albrey', favoriteMovie: 'Inception'};
+// Example:
 
-    var listOfvalues = collectionValues(obj);
+var obj = {name: 'Albrey', favoriteMovie: 'Inception'};
 
-    console.log(listOfValues) // ['Albrey', 'Inception'];
+var listOfvalues = collectionValues(obj);
 
-    ```
+console.log(listOfValues) // ['Albrey', 'Inception'];
+
+```
 
 ### containsValue
 
 `containsValue` takes two arguments, an object and a target value. If the object contains the target value, `containsValue` returns `true`; if not, `containsValue` returns `false`.
 
 
-  ```
-    // Example:
+```javascript
 
-    var obj = {name: 'Albrey', favoriteMovie: 'Inception'};
+// Example:
 
-    var targetTest = containsValue(obj, 'Albrey');
+var obj = {name: 'Albrey', favoriteMovie: 'Inception'};
 
-    console.log(targetTest) // true
+var targetTest = containsValue(obj, 'Albrey');
 
-  ```
+console.log(targetTest) // true
+
+```
 
 
 ## Expanding our callback:
@@ -194,7 +212,8 @@ Okay, so we know now that we can run our loop function on an `object` or an `arr
 
 For example, what if I wanted to collect data at *only* every even index. With a for-loop, that would look like this:
 
-```
+```javascript
+
 var evenIndexArray = function(arr){
   var results = [];
   // making sure our loop stops at the middle index in the array.
@@ -205,11 +224,13 @@ var evenIndexArray = function(arr){
 
   return results;
 };
+
 ```
 
 Attempting to use `loop` it would look like this:
 
-```
+```javascript
+
 var evenIndexArray = function(arr){
   var results = [];
   // we don't have access to the index, so we create a count to substitue
@@ -238,7 +259,8 @@ As you can see, That's a lot of extra functionality to add in! Our current `loop
 Inside of our `loop`, lets pass an additional argument to our `callback` function: an index.
 
 
-```
+```javascript
+
 var loop = function(collection, func){
 
   if (Array.isArray(collection)){
@@ -259,7 +281,8 @@ var loop = function(collection, func){
 Passing in the index/key allows **any** callback that we pass into `loop` access to the index/key corresponding
 to the current value that we're looping through! Pretty cool right? How would that change how we build evenIndexArray?
 
-```
+```javascript
+
 var evenIndexArray = function(arr){
   var results = [];
   // no need for count since we have access to the indexes;
@@ -288,7 +311,8 @@ and the index/key in order to solve the prompts.
 
 * [ ] Use `loop` to create a copy of the input object.
 
-```
+```javascript
+
     // Example:
 
     var obj = {name: 'Albrey', favoriteMovie: 'Inception'};
@@ -304,7 +328,8 @@ and the index/key in order to solve the prompts.
 `extendObj` takes two objects as arguments and uses loop to extend obj1 with the contents of obj2
 
 
-```
+```javascript
+
   // Example:
 
   var objOne = {name: 'Albrey', favoriteMovie: 'Inception'};
@@ -322,7 +347,8 @@ and the index/key in order to solve the prompts.
 `swapShuffle` takes one argument, an array, and mutates the array (it does not make a new one) and returns it with shuffled values.
 
 
-```
+```javascript
+
   // Example:
     var numbers = [1, 2, 3, 4, 5];
     swapShuffle(numbers);
@@ -335,9 +361,11 @@ and the index/key in order to solve the prompts.
 My friend is looking to buy a car this month and is excited to search CarFax.com. Unfortunately their search form is broken, and he has employed you to fix it for him so he can get on the road as soon as possible. Use your `loop` function to solve the next set of prompts. We have created a list of cars for you `sampleCarList` that should should investigate before starting. Each car object has corresponding properties that you will need to sift through to get what you want. Good luck!
 
 
-```
+```javascript
+
 var sampleCarList = helpers.carFactory(helpers.carDatabase, helpers.carMaker, 100);
 console.dir(sampleCarList);
+
 ```
 
 
@@ -386,11 +414,13 @@ You'll notice that there aren't any directions for the next couple of exercises.
   ```
 Create another function, `findByPrice` that takes a `price` parameter and a `list of cars` and returns a list of every car that falls under that price. If no cars fall under the price return "there are no cars below the price you entered."
 
-  ```
+  ```javascript
+  
   // Example:  
   var carCollection = [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
   console.log(findByPrice(28000, carCollection);
   // [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
+  
   ```
 
 Extend your findByPrice function to take two parameters, a `lowEndPrice` and a `highEndPrice` and returns a list of cars that are between the two prices.
