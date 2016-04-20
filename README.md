@@ -233,7 +233,7 @@ Attempting to use `loop` it would look like this:
 
 var evenIndexArray = function(arr){
   var results = [];
-  // we don't have access to the index, so we create a count to substitue
+  // we don't have access to the index, so we create a count to substitute
   var count = 0;
   loop(arr, function(val){
     // if the count is equal to zero, it's considered even.
