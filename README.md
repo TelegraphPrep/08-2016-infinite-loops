@@ -3,7 +3,7 @@
 
 **Fork the Repository**
 
-1. On Github's website, navigate to the [Higher Order Functions Repository.](https://github.com/TelegraphPrep/higherOrderFunctions)
+1. On Github's website, navigate to the [Infinite Loops Repository.](https://github.com/TelegraphPrep/04-2016-infinite-loops)
 2. Click the "Fork" button near the top right part of the screen.
 3. In the popup box, select your Github profile to copy the repository from the TelegraphPrep Github profile to your profile.
 
