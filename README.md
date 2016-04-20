@@ -357,7 +357,7 @@ and the index/key in order to solve the prompts.
 
 ## CarFax.com Sprint
 
-My friend is looking to buy a car this month and is excited to search CarFax.com. Unfortunately their search form is broken, and he has employed you to fix it for him so he can get on the road as soon as possible. Use your `loop` function to solve the next set of prompts. We have created a list of cars for you `sampleCarList` that should should investigate before starting. Each car object has corresponding properties that you will need to sift through to get what you want. Good luck!
+My friend is looking to buy a car this month and is excited to search CarFax.com. Unfortunately their search form is broken, and he has employed you to fix it for him so he can get on the road as soon as possible. Use your `loop` function to solve the next set of prompts. We have created a list of cars `sampleCarList` that you should investigate before starting. Each car object has corresponding properties that you will need to sift through to get what you want. Good luck!
 
 
 ```javascript
