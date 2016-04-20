@@ -254,7 +254,7 @@ var evenIndexArray = function(arr){
 
 ```
 
-As you can see, That's a lot of extra functionality to add in! Our current `loop` function loses its advantage over the `for loop` because it hasn't been given access to the `index` corresponding with each `value` inside of our array. With a little bit of magic we change that.
+As you can see, that's a lot of extra functionality to add in! Our current `loop` function loses its advantage over the `for loop` because it hasn't been given access to the `index` corresponding with each `value` inside of our array. With a little bit of magic we change that.
 
 Inside of our `loop`, lets pass an additional argument to our `callback` function: an index.
 
