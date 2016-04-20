@@ -103,7 +103,7 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
 
 `multBy` takes two arguments, an array and a number, and multiplies each value in the array by the input number.
 
-* [ ] use `_.map` to complete `multBy`.
+* [ ] use `loop` to complete `multBy`.
 
 ```javascript
 
