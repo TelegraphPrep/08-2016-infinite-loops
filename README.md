@@ -369,7 +369,7 @@ console.dir(sampleCarList);
 
 
 ### findBlueCars
-`findBlueCars` takes a `carList` array and returns an `array` containing each car object who's color is blue.
+`findBlueCars` takes a `carList` array and returns an `array` containing each car object whose color is blue.
   * [ ] create an array, `allBlueCars`, to store your cars in.
   * [ ] use loop to loop through your `carList` array
   * [ ] each car is an object, so you'll want to loop through the objects as well
