@@ -174,7 +174,7 @@ By just adding 4 lines of code, we can loop through `objects` as well! Solve the
 
 
 ### collectValues
-    `collectValues` takes an object as an argument and returns an array containing all of its values.
+`collectValues` takes an object as an argument and returns an array containing all of its values.
 
 ```javascript
 
