@@ -300,8 +300,7 @@ var evenIndexArray = function(arr){
 
 ```
 
-Cool! So we got rid of the count all together, which makes this a much more efficient function. This also changes how we can interact with `objects`, rarely we're going to be worried about
-**just** the values. In the next handful of exercises you will need to access the value
+Cool! So we got rid of the count all together, which makes this a much more efficient function. This also changes how we can interact with `objects`; we're rarely going to be worried **just** about the values. In the next handful of exercises you will need to access the value
 and the index/key in order to solve the prompts.
 
 
