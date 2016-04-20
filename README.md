@@ -403,13 +403,15 @@ You'll notice that there aren't any directions for the next couple of exercises.
 ### Random Price Generator
 `randomPriceGenerator` extends each `car object` to have a 'price' property with the value set to a random number between 15000 and 50000.
 
-  ```
+  ```javascript
+  
   // Example:
   var carCollection = [{color: "black", make: "Ford", model:"Everest", year:1994}]
   randomPriceGenerator(carCollection);
   console.log(carCollection);
 
   // [{color: "black", make: "Ford", model:"Everest", year:1994, price: 27847}];
+  
   ```
 Create another function, `findByPrice` that takes a `price` parameter and a `list of cars` and returns a list of every car that falls under that price. If no cars fall under the price return "there are no cars below the price you entered."
 
