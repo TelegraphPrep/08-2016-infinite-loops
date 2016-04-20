@@ -118,7 +118,7 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
 
   `squareBy` takes two arguments, an array and a number, and squares each value in the array by the input number.
 
-* [ ] use _.map to complete `squareBy`.
+* [ ] use `loop` to complete `squareBy`.
 
 ```javascript
 
