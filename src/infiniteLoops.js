@@ -18,7 +18,7 @@ var loop = function(collection, callback){
 
 // 5. multBy
 
-// 6. squareBy 
+// 6. powerOf 
 
 // 7. capitalizeFirstLetters 
 
