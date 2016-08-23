@@ -115,17 +115,17 @@ A palindrome is a word that is spelled the exact same way forward than it is bac
   
 ```
 
-### squareBy
+### powerOf
 
-  `squareBy` takes two arguments, an array and a number, and squares each value in the array by the input number.
+  `powerOf` takes two arguments, an array and a number, and raises each value in the array by the power of the input number.
 
-* [ ] use `loop` to complete `squareBy`.
+* [ ] use `loop` to complete `powerOf`.
 
 ```javascript
 
   // Example:
   var nums = [1, 2, 3, 4, 5];
-  var newArray = prep.squareBy(nums, 3);
+  var newArray = prep.powerOf(nums, 3);
   console.log(newArray) // [1, 8, 27, 256, 3125];
   
 ```
